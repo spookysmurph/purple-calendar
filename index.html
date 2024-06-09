@@ -9,25 +9,30 @@
     <style>
         body {
             font-family: monospace;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
         }
 
         .wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start; /* Align to the top */
+            justify-content: flex-start; /* Align to the left */
             flex-direction: column;
-            min-height: 100%;
+            width: 100%; /* Ensure full width */
+            height: 100%; /* Ensure full height */
         }
 
         #calendar {
-            margin: 0 auto;
+            margin: 0;
             font-size: 10.5px; /* Reduced from 14px to 10.5px (25% smaller) */
         }
 
         table {
             border-collapse: collapse;
             table-layout: fixed;
-            position: absolute;
             background-color: #fff;
             border: 1.5px solid #000000; /* Reduced size */
             box-shadow: 1.5px 1.5px 0.75px 0px #000000; /* Reduced size */
@@ -291,4 +296,3 @@
     </script>
 </body>
 </html>
-
